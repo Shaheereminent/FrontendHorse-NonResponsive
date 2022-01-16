@@ -1,0 +1,381 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {background-color: #fefcf6;}
+h1, h2, h3, h4, h5, h6, p, a, li {list-style: none; text-decoration: none; margin: 0; padding: 0;} 
+/* ------------------------ header ------------------------ */
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Frank Ruhl Libre', serif; */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav ul li a {
+    color: #F8574E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* ------------------------ Hero ------------------------ */
+main .hero {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 30px 40px 30px;
+    height: 87vh;
+}
+
+
+.left-side h1 {
+    line-height: 96px;
+    width: 460px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 6rem;
+    font-weight: 900;
+    color: #F8574E;
+    margin-bottom: 2rem;
+}
+
+.left-side p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.30rem;
+    line-height: 30px;
+    color: #141414;
+    width: 440px;
+}
+
+.left-side .form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px 0 8px 0;
+}
+
+.form button {
+    border-radius: 12px;
+    border: none;
+    background-color: #F8574E;
+    color: #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 24px 36px;
+    cursor: pointer;
+}
+
+.form input {
+    width: 300px;
+    border-radius: 12px;
+    border: solid 2px #F8574E;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.left-side .terms {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    color: #141414;
+}
+
+.right-side {
+    text-align: right;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+/* ------------------------ Feature Article ------------------------ */
+.fe-article {
+    background-image: url("pattern.png");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 10%;
+    background-blend-mode: soft-light;
+    background-color: #F8574E;
+}
+
+.article1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 30px;
+}
+
+.article1 h2 {
+    color: #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4rem;
+    padding-bottom: 30px;
+    font-weight: 900;
+}
+
+.view-all-container {
+    margin-top: 40px;
+    margin-left: 85%;
+}
+
+.article1 button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.35rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.article1 button:hover {
+    text-decoration: underline;
+}
+
+.article1 button i {
+    transition: all .4s ease-out;
+    margin-left: 0.5rem;
+}
+
+.article1 button:hover i {
+    margin-left: 1.25rem;
+}
+
+/* ------------------------ Recent Article ------------------------ */
+.rc-article {
+    background-image: url("pattern.png");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 10%;
+    background-blend-mode: soft-light;
+    background-color: #164993;
+}
+
+.article2 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 30px;
+}
+
+.card-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.article2 h2 {
+    color: #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4rem;
+    padding-bottom: 30px;
+    font-weight: 900;
+}
+
+.article2 button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.35rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.article2 button:hover {
+    text-decoration: underline;
+}
+
+.article2 button i {
+    transition: all .4s ease-out;
+    margin-left: 0.5rem;
+}
+
+.article2 button:hover i {
+    margin-left: 1.25rem;
+}
+
+/* ------------------------ Footer Mail ------------------------ */
+.mail-footer {
+    background-color: #fffcf1;
+    padding: 40px;
+}
+
+.mail-wrapper {
+    border-radius: 1.2rem;
+    margin: 0 auto;
+    padding: 5rem;
+    max-width: 1440px;
+    gap: 3rem;
+    justify-content: center;
+    background-color: #C9ECE4;
+    display: flex;
+}
+
+.mail-footer {
+    border-bottom: solid 1px rgb(231, 231, 231);
+}
+
+.mail-footer .detail-container h3 {
+    line-height: 46px;
+    width: 400px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.75rem;
+    color: #164993;
+    margin-bottom: 1.25rem;
+}
+
+.mail-footer .detail-container p {
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    padding-bottom: 0.75rem;
+    color: #474747;
+    font-size: 1.085rem;
+    margin-bottom: 0.5rem;
+}
+
+.mail-footer .detail-container .form {
+    margin-bottom: 0.5rem;
+}
+
+.mail-footer .detail-container .terms {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    padding-bottom: 0.25rem;
+}
+
+.mail-footer .detail-container .past-issues {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    color: #818181;
+    font-size: 1.085rem;
+}
+
+.mail-footer .detail-container .form button {
+    margin-left: 0.5rem;
+}
+
+
+/* ------------------------ Main Footer ------------------------ */
+.main-footer  {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-footer .up-side {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.up-side nav ul li a {
+    color: #164993;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.low-footer {
+    background-color: #164993;
+}
+
+.bot-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.bot-side {
+    padding: 30px 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.bot-side span {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bot-side nav ul li a {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+/* ------------------------ Card ------------------------ */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    transition: all .4s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0px 32px 16px rgba(46, 46, 46, 0.1);
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.detail {
+    border-radius: 0 0 12px 12px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.detail h2 {
+    padding-bottom: 1rem;
+    color: #F8574E;
+    font-size: 1.75rem;
+}
+
+.detail p {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1rem;
+    color: #474747;
+    font-size: 1.085rem;
+}
+
+.detail span {
+    font-family: 'Roboto', sans-serif;
+    color: #474747;
+    font-size: 0.80rem;
+}
+
+.detail i {
+    margin: 0 0 0 0.5rem;
+    color: #636363;
+    font-size: 0.80rem;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+}
